@@ -192,6 +192,30 @@ footer {
     margin-top: 20px;
 }
 
+/* Styles de l'animation de deplacement du telephone */
+#car {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: driveCar 5s infinite linear;
+}
+
+#car img {
+    width: 100px;
+    height: auto;
+}
+
+@keyframes driveCar {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+
+
 @keyframes moveRectangle {
     0% { transform: translateX(0); }
     50% { transform: translateX(200px); }
